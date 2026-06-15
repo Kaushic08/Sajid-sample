@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2a6f97, #54b3d6);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-card {
+            background: #fff;
+            width: 340px;
+            padding: 30px 28px;
+            border-radius: 14px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+        }
+        .login-card h1 {
+            margin: 0 0 18px;
+            font-size: 24px;
+            color: #1b3a57;
+        }
+        .login-card p {
+            margin: 0 0 24px;
+            color: #556771;
+            line-height: 1.5;
+        }
+        .field-group {
+            margin-bottom: 18px;
+        }
+        .field-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #4d5c6b;
+        }
+        .field-group input {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #cdd7df;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.2s ease;
+        }
+        .field-group input:focus {
+            outline: none;
+            border-color: #2a6f97;
+            box-shadow: 0 0 0 3px rgba(42, 111, 151, 0.12);
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .actions label {
+            font-size: 13px;
+            color: #556771;
+            display: flex;
+            align-items: center;
+        }
+        .actions input[type="checkbox"] {
+            margin-right: 8px;
+            accent-color: #2a6f97;
+        }
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background: #2a6f97;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        .login-button:hover {
+            background: #245b80;
+        }
+        .help-links {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+        .help-links a {
+            color: #2a6f97;
+            text-decoration: none;
+            margin: 0 6px;
+        }
+        .help-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <h1>Store Login</h1>
+        <p>Sign in to access your account, track orders, and manage your shopping experience.</p>
+        <form>
+            <div class="field-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required />
+            </div>
+            <div class="actions">
+                <label><input type="checkbox" name="remember" /> Remember me</label>
+                <a href="#">Forgot?</a>
+            </div>
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+        <div class="help-links">
+            <span>New to the store?</span>
+            <a href="#">Create account</a>
+        </div>
+    </div>
+</body>
+</html>
